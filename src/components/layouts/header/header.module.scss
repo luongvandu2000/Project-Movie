@@ -1,0 +1,92 @@
+.header {
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    width: 150px;
+    padding: 10px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 25px 10px;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: gray;
+    }
+}
+
+.account {
+    position: relative;
+
+    &:hover {
+        color: white;
+        background-color: gray;
+    }
+
+    &:hover ul {
+        display: block;
+    }
+}
+
+.account .acc-nav {
+    padding: 25px 10px;
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.down-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.account ul {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    border-top: 2px solid var(--color-text);
+    background-color: var(--color-background-2);
+    display: none;
+}
+
+.account ul li {
+    padding: 5px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-text);
+        color: var(--color-background-2);
+    }
+}
+
+.acc-icon {
+    padding: 0 10px;
+}
