@@ -1,0 +1,70 @@
+.filter {
+    font-size: 1.5rem;
+}
+
+.filter .type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+    background-color: var(--color-background-type-2);
+}
+
+.filter .type li {
+    min-width: 13%;
+}
+
+.filter .type .type-menu {
+    min-width: 6%;
+}
+
+.filter .type .type-section p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.filter .type .type-section .section {
+    background-color: var(--color-background-type);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    outline: none;
+    // appearance: none;
+    justify-content: space-between;
+    // &:hover{
+    //     cursor: pointer;
+    //     color: var(--color-hover);
+    // }
+}
+
+.filter .type .type-section .section option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter .type .type-section .section .title {
+    color: var(--color-text-5);
+}
+
+.filter .type .type-section .section .icon {
+    color: var(--color-icon);
+}
+
+.filter .type .type-section .menu {
+    background-color: transparent;
+    padding: 0;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter .type .type-section .menu .view{
+    color: var(--color-text-2);
+    &:hover{
+        cursor: pointer;
+        color: var(--color-text);
+    }
+}

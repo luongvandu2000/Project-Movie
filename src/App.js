@@ -1,8 +1,8 @@
-import Layout from "./components/layouts";
+import Body from "./components/layouts/filter";
 
 function App() {
   return (
-    <Layout children />
+    <Body />
   );
 }
 

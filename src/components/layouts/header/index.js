@@ -39,7 +39,7 @@ function Header() {
                     </div>
                     <div className={cx('account')}>
                         <div className={cx('acc-nav')}>
-                            <span>Luong Van Du</span>
+                            <span>Lương Văn Du</span>
                             <FontAwesomeIcon className={cx('down-icon')} icon={faChevronDown} />
                         </div>
                         <ul>
