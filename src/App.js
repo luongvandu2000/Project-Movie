@@ -1,8 +1,8 @@
-import Body from "./components/layouts/filter";
+import PhimBo from "./pages/body/phimbo";
 
 function App() {
   return (
-    <Body />
+    <PhimBo />
   );
 }
 
