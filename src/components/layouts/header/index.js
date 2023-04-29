@@ -24,7 +24,7 @@ function Header() {
 
         const handleScroll = () => {
             if (window.scrollY > 0) {
-                header.style.backgroundColor = '#3a146d'
+                header.style.backgroundColor = '#412d40'
             }
             else {
                 header.style.backgroundColor = 'unset'

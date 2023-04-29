@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import style from './filter.module.scss';
 import base from '~/components/styles/baseStyle/base.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faList, faTableCells } from '@fortawesome/free-solid-svg-icons';
+import { faList, faTableCells } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(style);
 const cbase = classNames.bind(base);
