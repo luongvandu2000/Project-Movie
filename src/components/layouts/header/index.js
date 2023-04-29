@@ -11,12 +11,28 @@ import {
     faFilm,
     faComment,
     faRightFromBracket,
+    faObjectUngroup,
 } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 const cx = classNames.bind(style);
 const cbase = classNames.bind(base);
 
 function Header() {
+    useEffect(() => {
+        const header = document.querySelector(`.${cx('header')}`);
+
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                header.style.backgroundColor = '#3a146d'
+            }
+            else {
+                header.style.backgroundColor = 'unset'
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <header className={cx('header')}>
             <div className={cbase('container-large')}>
