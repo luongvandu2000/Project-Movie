@@ -11,12 +11,28 @@ import {
     faFilm,
     faComment,
     faRightFromBracket,
+    faObjectUngroup,
 } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 const cx = classNames.bind(style);
 const cbase = classNames.bind(base);
 
 function Header() {
+    useEffect(() => {
+        const header = document.querySelector(`.${cx('header')}`);
+
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                header.style.backgroundColor = '#412d40'
+            }
+            else {
+                header.style.backgroundColor = 'unset'
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <header className={cx('header')}>
             <div className={cbase('container-large')}>
@@ -39,7 +55,7 @@ function Header() {
                     </div>
                     <div className={cx('account')}>
                         <div className={cx('acc-nav')}>
-                            <span>Luong Van Du</span>
+                            <span>Lương Văn Du</span>
                             <FontAwesomeIcon className={cx('down-icon')} icon={faChevronDown} />
                         </div>
                         <ul>

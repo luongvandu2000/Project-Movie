@@ -1,0 +1,65 @@
+.nav{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #19456b;
+}
+
+.category{
+    padding-bottom: 5px;
+    margin-bottom: auto;
+    color: var(--color-category);
+    font-size: 2.6rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.nav a{
+    font-size: 1.6rem;
+    color: var(--color-text-2);
+    &:hover{
+        cursor: pointer;
+        color: var(--color-text);
+    }
+}
+
+.icon{
+    margin-left: 5px;
+}
+
+.frame{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -1%;
+}
+
+.poster {
+    max-width: 18%;
+    padding: 1%;
+}
+
+.poster img{
+    width: 100%;
+}
+
+.film h2, .film p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.film h2{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.film p{
+    font-size: 1.5rem;
+    color: var(--color-text-2);
+}
+
+
