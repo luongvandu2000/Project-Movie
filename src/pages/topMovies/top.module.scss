@@ -1,0 +1,32 @@
+.top {
+    margin-top: 100px;
+}
+
+.top h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.top .times {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: var(--color-text-1);
+    border-radius: 5px;
+    background-color: #0b1e30;
+}
+
+.top .times .times-view {
+    padding: 15px 0 13px 0;
+    width: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid #3f51b5;
+    color: #3f51b5;
+}

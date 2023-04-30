@@ -1,0 +1,15 @@
+.search{
+    margin-top: 80px;
+}
+
+.search-films{
+    width: 100%;
+    font-size: 2.2rem;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    &:focus{
+        outline: 1px solid rgb(84, 84, 255);
+    }
+}

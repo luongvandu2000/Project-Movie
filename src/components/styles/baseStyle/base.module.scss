@@ -20,9 +20,14 @@
     --transition-1: all ease 0.2s;
 }
 
+* {
+    box-sizing: inherit;
+}
+
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -36,12 +41,14 @@ body {
     margin: auto;
 }
 
-.container-small{
+.container-small {
     max-width: 73%;
     margin: auto;
 }
 
-li,ul,ol {
+li,
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
