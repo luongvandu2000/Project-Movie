@@ -6,7 +6,9 @@
     --color-background-2: #333;
     --color-background-type: #ffffff;
     --color-background-type-2: #091c2d;
-    --color-text: #e5e6e7;
+    --color-background-button: #ffe08a;
+    --color-background-button-2: #3e8ed0;
+    --color-text: #eeeeee;
     --color-text-1: #dbdbdb;
     --color-text-2: #7a7a7a;
     --color-text-3: #b5b5b5;
@@ -20,9 +22,14 @@
     --transition-1: all ease 0.2s;
 }
 
+* {
+    box-sizing: inherit;
+}
+
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -36,12 +43,14 @@ body {
     margin: auto;
 }
 
-.container-small{
+.container-small {
     max-width: 73%;
     margin: auto;
 }
 
-li,ul,ol {
+li,
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -54,4 +63,16 @@ a {
 
 p {
     margin: auto;
+}
+
+button {
+    outline: none;
+
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 0;
 }

@@ -12,19 +12,23 @@ function Films({ title, listfilm, viewAll }) {
     return (
         <section className={cx('film')}>
             <div className={cbase('container-small')}>
-                <div className={cx('nav')}>
-                    <h1 className={cx('category')}>{title}</h1>
-                    {viewAll ? (
-                        <div>
-                            <a>
-                                Xem Tất Cả
-                                <FontAwesomeIcon className={cx('icon')} icon={faCaretRight} />
-                            </a>
-                        </div>
-                    ) : (
-                        ''
-                    )}
-                </div>
+                {title != undefined ? (
+                    <div className={cx('nav')}>
+                        <h1 className={cx('category')}>{title}</h1>
+                        {viewAll ? (
+                            <div>
+                                <a>
+                                    Xem Tất Cả
+                                    <FontAwesomeIcon className={cx('icon')} icon={faCaretRight} />
+                                </a>
+                            </div>
+                        ) : (
+                            ''
+                        )}
+                    </div>
+                ) : (
+                    ''
+                )}
                 <div className={cx('frame')}>
                     {listfilm.map((element) => {
                         return (
