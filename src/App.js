@@ -1,15 +1,16 @@
+import Home from './pages/home';
 import Search from './pages/search';
-import Faqs from './pages/faqs';
 import Top from './pages/topMovies';
 import Odd from './pages/oddMovies';
 import Series from './pages/seriesMovies';
 import New from './pages/newMovies';
-import Home from './pages/home';
+import Faqs from './pages/faqs';
+import Account from './pages/account';
 
 function App() {
     return (
         <>
-            <Odd />
+            <Account />
         </>
     );
 }
