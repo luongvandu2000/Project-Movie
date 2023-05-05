@@ -6,11 +6,12 @@ import Series from './pages/seriesMovies';
 import New from './pages/newMovies';
 import Faqs from './pages/faqs';
 import Account from './pages/account';
+import Donate from './pages/donate';
 
 function App() {
     return (
         <>
-            <Account />
+            <Donate />
         </>
     );
 }
