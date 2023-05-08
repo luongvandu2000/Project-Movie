@@ -1,0 +1,159 @@
+.donate {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-top: 100px;
+    line-height: 24px;
+}
+
+.donate .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.donate .title h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.donate .bank {
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate .qr,
+.donate .card {
+    width: 35%;
+}
+
+.donate .qr .vip{
+    color: var(--color-title);
+    font-weight: bold;
+}
+
+.donate .qr h2,
+.donate .card h2 {
+    text-align: center;
+}
+
+.donate .qr .img-qr {
+    text-align: center;
+}
+
+.donate .qr img {
+    width: 60%;
+    margin: 10px 0;
+}
+
+.donate .qr .info{
+    color: #428bca;
+    &:hover{
+        color: var(--color-hover);
+        cursor: pointer;
+    }
+}
+
+.donate .qr .qr-info{
+    margin-top: 20px;
+    display: none;
+}
+
+.donate .qr .qr-info ul{
+    margin: 20px 0 20px 30px;
+}
+
+.donate .qr .qr-info li{
+    list-style: disc;
+}
+
+.donate .qr .qr-info .note-info{
+    color: var(--color-title);
+    margin-left: 30px;
+}
+
+.donate .or {
+    text-align: center;
+}
+
+.donate ol li {
+    list-style: decimal;
+}
+
+.donate .card .text{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.donate .card .note{
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.donate .card .sevice {
+    display: flex;
+    text-align: center;
+}
+
+.donate .card .sevice img {
+    width: 50%;
+}
+
+.donate .card .sevice .img {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.donate .card .price {
+    margin: 40px 0;
+}
+
+.donate .card .price select {
+    margin-top: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.donate .card .price p{
+    font-size: 1.1rem;
+    color: var(--color-title);
+}
+
+.donate .card .code{
+    margin-bottom: 40px;
+}
+
+.donate .card .code input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.donate .card .code p{
+    font-size: 1.1rem;
+    color: var(--color-title);
+}
+
+.donate .card .submit{
+    text-align: center;
+}
+
+.donate .card .submit button{
+    background-color: #cf2122;
+    color: var(--color-text);
+    border: none;
+    font-size: 1.8rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.donate .attension{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
