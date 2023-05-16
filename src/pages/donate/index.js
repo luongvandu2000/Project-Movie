@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Header from '~/components/layouts/header';
 import Footer from '~/components/layouts/footer';
 import style from './donate.module.scss';
@@ -54,12 +56,23 @@ function Donate() {
         };
     }, []);
 
+    function ScrollToTopOnLink() {
+        const location = useLocation();
+
+        React.useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [location]);
+
+        return null;
+    }
+
     // const handleCheck = () => {}; //Hàm sau này xử lí dữ liệu card
 
     return (
         <>
             <Header />
             <section className={cx('donate')}>
+                <ScrollToTopOnLink />
                 <div className={cbase('container-small')}>
                     <div className={cx('title')}>
                         <h1>Donate</h1>
@@ -177,10 +190,10 @@ function Donate() {
                     <div className={cx('attension')}>
                         <p>Chú ý:</p>
                         <p>
-                            - Xem số dư tài khoản của bạn <a href="">ở đây</a>
+                            - Xem số dư tài khoản của bạn <Link to="/account">ở đây</Link>
                         </p>
                         <p>
-                            - Các vấn đề thường gặp khi donate và cách xử lý <a href="">xem ở đây</a>
+                            - Các vấn đề thường gặp khi donate và cách xử lý <Link to="/faqDonate">xem ở đây</Link>
                         </p>
                     </div>
                 </div>

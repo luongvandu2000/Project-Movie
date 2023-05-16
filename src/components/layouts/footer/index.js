@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import classNames from 'classnames/bind';
 import style from './footer.module.scss';
 import base from '../../styles/baseStyle/base.module.scss';
@@ -12,7 +13,7 @@ function Footer() {
         <footer className={cx('footer')}>
             <div className={cbase('container-small')}>
                 <p>
-                    Phim chất lượng cao online của <a href="#">XemPhim</a> khác gì so với các trang phim khác?
+                    Phim chất lượng cao online của <Link to="/">XemPhim</Link> khác gì so với các trang phim khác?
                 </p>
                 <ul>
                     <li className={cx('description')}>

@@ -6,6 +6,7 @@
     left: 0;
     transition: var(--transition);
     position: fixed;
+    z-index: 100;
 }
 
 .wrapper{
@@ -30,12 +31,13 @@
     align-items: center;
 }
 
-.nav-list li {
+.nav-list li a {
+    display: inline-block;
     padding: 25px 10px;
-
+    color: white;
     &:hover {
         cursor: pointer;
-        color: white;
+        color: #2b4f6f;
         background-color: gray;
     }
 }
@@ -82,9 +84,11 @@
     display: none;
 }
 
-.account ul li {
+.account ul li a {
+    display: inline-block;
+    width: 100%;
     padding: 5px;
-
+    color: var(--color-text);
     &:hover {
         cursor: pointer;
         background-color: var(--color-text);

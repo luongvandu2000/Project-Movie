@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import logo from '~/assets/img/logo/logo-netflix.png';
 import style from './header.module.scss';
@@ -11,7 +13,6 @@ import {
     faFilm,
     faComment,
     faRightFromBracket,
-    faObjectUngroup,
 } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
@@ -24,33 +25,54 @@ function Header() {
 
         const handleScroll = () => {
             if (window.scrollY > 0) {
-                header.style.backgroundColor = '#412d40'
-            }
-            else {
-                header.style.backgroundColor = 'unset'
+                header.style.backgroundColor = '#412d40';
+            } else {
+                header.style.backgroundColor = 'unset';
             }
         };
         window.addEventListener('scroll', handleScroll);
     }, []);
+    function ScrollToTopOnLink() {
+        const location = useLocation();
+
+        React.useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [location]);
+
+        return null;
+    }
 
     return (
         <header className={cx('header')}>
+            <ScrollToTopOnLink />
             <div className={cbase('container-large')}>
                 <div className={cx('wrapper')}>
                     <div className={cx('nav')}>
-                        <a href="#">
+                        <Link to="/">
                             <img src={logo} />
-                        </a>
+                        </Link>
                         <ul className={cx('nav-list')}>
                             <li>
-                                <FontAwesomeIcon className={cx('search-icon')} icon={faMagnifyingGlass} />
-                                Tìm kiếm
+                                <Link to="/search">
+                                    <FontAwesomeIcon className={cx('search-icon')} icon={faMagnifyingGlass} />
+                                    Tìm kiếm
+                                </Link>
                             </li>
-                            <li>Phim Hot</li>
-                            <li>Phim Lẻ</li>
-                            <li>Phim Bộ</li>
-                            <li>Phim Mới</li>
-                            <li>FAQ</li>
+                            <li>
+                                <Link to="/top">Phim Hot</Link>
+                            </li>
+                            <li>
+                                <Link to="/odd">Phim Lẻ</Link>
+                            </li>
+                            <li>
+                                <Link to="/series">Phim Bộ</Link>
+                            </li>
+                            <li>
+                                <Link to="/new">Phim Mới</Link>
+                            </li>
+                            <li>
+                                <Link to="/faq">FAQs</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className={cx('account')}>
@@ -60,24 +82,34 @@ function Header() {
                         </div>
                         <ul>
                             <li>
-                                <FontAwesomeIcon className={cx('acc-icon')} icon={faUser} />
-                                Tài khoản
+                                <Link to="/account">
+                                    <FontAwesomeIcon className={cx('acc-icon')} icon={faUser} />
+                                    Tài khoản
+                                </Link>
                             </li>
                             <li>
-                                <FontAwesomeIcon className={cx('acc-icon')} icon={faCircleDollarToSlot} />
-                                Donate
+                                <Link to="/donate">
+                                    <FontAwesomeIcon className={cx('acc-icon')} icon={faCircleDollarToSlot} />
+                                    Donate
+                                </Link>
                             </li>
                             <li>
-                                <FontAwesomeIcon className={cx('acc-icon')} icon={faFilm} />
-                                Bộ sưu tập
+                                <Link to="">
+                                    <FontAwesomeIcon className={cx('acc-icon')} icon={faFilm} />
+                                    Bộ sưu tập
+                                </Link>
                             </li>
                             <li>
-                                <FontAwesomeIcon className={cx('acc-icon')} icon={faComment} />
-                                Cặp câu song ngữ
+                                <Link to="">
+                                    <FontAwesomeIcon className={cx('acc-icon')} icon={faComment} />
+                                    Cặp câu song ngữ
+                                </Link>
                             </li>
                             <li>
-                                <FontAwesomeIcon className={cx('acc-icon')} icon={faRightFromBracket} />
-                                Thoát
+                                <Link to="">
+                                    <FontAwesomeIcon className={cx('acc-icon')} icon={faRightFromBracket} />
+                                    Thoát
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -8,6 +8,8 @@
     --color-background-type-2: #091c2d;
     --color-background-button: #ffe08a;
     --color-background-button-2: #3e8ed0;
+    --color-background-button-3: #c30b27;
+    --color-background-button-4: #485fc7;
     --color-text: #eeeeee;
     --color-text-1: #dbdbdb;
     --color-text-2: #7a7a7a;
@@ -30,6 +32,7 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
