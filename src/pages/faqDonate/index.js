@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import style from './faqDonate.module.scss';
+import style from '~/components/layouts/faqs/faqs.module.scss';
 import base from '~/components/styles/baseStyle/base.module.scss';
 import Faqs from '~/components/layouts/faqs';
 
@@ -79,7 +79,7 @@ function FaqDonate() {
                         },
                     },
                     {
-                        id: 3,
+                        id: 4,
                         ask: 'Các vấn đề phát sinh khác',
                         answer: {
                             contents: [

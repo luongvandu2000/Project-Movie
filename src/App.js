@@ -1,19 +1,17 @@
-import Home from './pages/home';
-import Search from './pages/search';
-import Top from './pages/topMovies';
-import Odd from './pages/oddMovies';
-import Series from './pages/seriesMovies';
-import New from './pages/newMovies';
-import Account from './pages/account';
-import Donate from './pages/donate';
-import Faq from './pages/faq';
-import FaqDonate from './pages/faqDonate';
+import { Routes, Route } from 'react-router-dom'
+import Router from "./routes";
+import { publicRoutes } from '~/routes'
+import Movies from './components/layouts/movies';
 
 function App() {
     return (
-        <>
-            <FaqDonate />
-        </>
+        <Routes>
+            {publicRoutes.map((route, index) => {
+                const Page = route.component
+                return <Route key={index} path={route.path} element={<Page />} />
+            })}
+        </Routes>
+        // <Movies />
     );
 }
 

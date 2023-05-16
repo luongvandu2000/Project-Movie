@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import style from './faq.module.scss';
+import style from '~/components/layouts/faqs/faqs.module.scss';
 import base from '~/components/styles/baseStyle/base.module.scss';
 import Faqs from '~/components/layouts/faqs';
 
