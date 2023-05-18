@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import style from './footer.module.scss';
 import base from '../../styles/baseStyle/base.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPodcast, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebookF, FaTelegramPlane } from 'react-icons/fa';
+import { HiMail } from "react-icons/hi";
 
 const cx = classNames.bind(style);
 const cbase = classNames.bind(base);
@@ -39,13 +39,13 @@ function Footer() {
                     </li>
                     <ul className={cx('icon')}>
                         <li className={cx('icon-footer')}>
-                            <FontAwesomeIcon icon={faEnvelope} />
+                            <HiMail />
                         </li>
                         <li className={cx('icon-footer', 'icon-mid')}>
-                            <FontAwesomeIcon icon={faPodcast} />
+                            <FaFacebookF />
                         </li>
                         <li className={cx('icon-footer')}>
-                            <FontAwesomeIcon icon={faPaperPlane} />
+                            <FaTelegramPlane />
                         </li>
                     </ul>
                 </ul>

@@ -5,13 +5,13 @@ import Movies from './components/layouts/movies';
 
 function App() {
     return (
-        <Routes>
-            {publicRoutes.map((route, index) => {
-                const Page = route.component
-                return <Route key={index} path={route.path} element={<Page />} />
-            })}
-        </Routes>
-        // <Movies />
+        // <Routes>
+        //     {publicRoutes.map((route, index) => {
+        //         const Page = route.component
+        //         return <Route key={index} path={route.path} element={<Page />} />
+        //     })}
+        // </Routes>
+        <Movies />
     );
 }
 
