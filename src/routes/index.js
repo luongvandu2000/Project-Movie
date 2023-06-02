@@ -9,6 +9,7 @@ import Donate from '~/pages/donate';
 import Faq from '~/pages/faq';
 import FaqDonate from '~/pages/faqDonate';
 import Movies from '~/components/layouts/movies';
+import moviesPage from '~/pages/moviesPage';
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -21,7 +22,7 @@ const publicRoutes = [
     { path: '/donate', component: Donate },
     { path: '/faq', component: Faq },
     { path: '/faqDonate', component: FaqDonate },
-    { path: '/movies', component: Movies },
+    { path: '/movies', component: moviesPage },
 ]
 
 export { publicRoutes }

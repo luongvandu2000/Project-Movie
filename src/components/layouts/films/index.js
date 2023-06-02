@@ -4,6 +4,7 @@ import base from '~/components/styles/baseStyle/base.module.scss';
 import images from './image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(style);
 const cbase = classNames.bind(base);
@@ -33,9 +34,11 @@ function Films({ title, listfilm, viewAll }) {
                     {listfilm.map((element) => {
                         return (
                             <div className={cx('poster')}>
-                                <image>
-                                    <img src={images[`./${element.img}`]} />
-                                </image>
+                                <Link to={'/movies'}>
+                                    <image>
+                                        <img src={images[`./${element.img}`]} />
+                                    </image>
+                                </Link>
                                 <h2>{element.name}</h2>
                                 <p>{element.desc}</p>
                             </div>

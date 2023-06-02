@@ -1,9 +1,9 @@
-.movies{
+.movies {
     position: relative;
     font-size: 1.4rem;
 }
 
-.movies .bg{
+.movies .bg {
     background-image: url('../../../assets/img/movie/The\ Covenant.jpg');
     width: 100%;
     height: 600px;
@@ -12,22 +12,22 @@
     z-index: -1;
 }
 
-.movies .detail{
+.movies .detail {
     display: flex;
     position: relative;
     margin-top: -330px;
 }
 
-.movies .detail >*:not(:first-child){
+.movies .detail>*:not(:first-child) {
     margin-left: 50px;
 }
 
-.movies .detail .poster img{
+.movies .detail .poster img {
     width: 100%;
     border-radius: 5px;
 }
 
-.movies .detail .poster .btn-view{
+.movies .detail .poster .btn-view {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,68 +38,69 @@
     border-radius: 5px;
     color: var(--color-text);
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: #dd3952;
     }
 }
 
-.movies .detail .poster .btn-view .play{
+.movies .detail .poster .btn-view .play {
     font-size: 2.3rem;
 }
 
-.movies .detail .poster .btn-view .view{
+.movies .detail .poster .btn-view .view {
     margin-left: 15px;
     align-self: last baseline;
 }
 
-.movies .detail .content{
-    width: 75% ;
+.movies .detail .content {
+    width: 75%;
 }
 
-.movies .detail .content .name-en{
+.movies .detail .content .name-en {
     font-size: 5rem;
     font-family: 'Merriweather', serif;
 }
 
-.movies .detail .content .name-vn{
+.movies .detail .content .name-vn {
     color: var(--color-text-3);
     font-size: 2.2rem;
     margin: 10px 0 60px 0;
 }
 
-.movies .detail .content .point{
+.movies .detail .content .point {
     display: flex;
     align-items: center;
 }
 
-.movies .detail .content .times{
+.movies .detail .content .times {
     font-size: 1.8rem;
     margin-bottom: 35px;
 }
 
-.movies .detail .content .point{
+.movies .detail .content .point {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
-.movies .detail .content .point img{
+.movies .detail .content .point img {
     width: 50px;
     margin-right: 10px;
 }
 
-.movies .detail .content .switch{
+.movies .detail .content .switch {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.movies .detail .content .switch .btn{
+.movies .detail .content .switch .btn {
     display: flex;
     align-items: center;
 }
 
-.movies .detail .content .switch .btn .node{
+.movies .detail .content .switch .btn .node {
     border-radius: 5px;
     border: 1px solid var(--color-background-button-4);
     padding: 10px 15px;
@@ -107,31 +108,32 @@
     cursor: pointer;
 }
 
-.movies .detail .content .switch .btn .node span{
+.movies .detail .content .switch .btn .node span {
     margin-left: 10px;
 }
 
-.movies .detail .content .switch .btn .share{
+.movies .detail .content .switch .btn .share {
     background-color: var(--color-background-button-4);
     margin-right: 10px;
 }
 
-.movies .detail .content .switch .btn .share{
-    &:hover{
+.movies .detail .content .switch .btn .share {
+    &:hover {
         background-color: rgb(10, 10, 191);
         border-color: rgb(10, 10, 191);
     }
 }
 
-.movies .detail .content .switch .btn .collect{
+.movies .detail .content .switch .btn .collect {
     position: relative;
-    &:hover{
+
+    &:hover {
         background-color: var(--color-background-button-2);
         border-color: var(--color-background-button-2);
     }
 }
 
-.movies .detail .content .switch .btn .collect .addfilm{
+.movies .detail .content .switch .btn .collect .addfilm {
     position: absolute;
     top: 110%;
     left: 0;
@@ -141,7 +143,7 @@
     display: none;
 }
 
-.movies .detail .content .switch .btn .collect .addfilm::after{
+.movies .detail .content .switch .btn .collect .addfilm::after {
     content: '';
     position: absolute;
     top: -10px;
@@ -149,48 +151,50 @@
     height: 20px;
 }
 
-.movies .detail .content .switch .btn .collect .addfilm .add{
+.movies .detail .content .switch .btn .collect .addfilm .add {
     width: 300px;
     font-size: 1.4rem;
     padding: 10px 15px;
     color: var(--color-text-5);
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: var(--color-text-1);
     }
 }
 
-.movies .detail .content .switch .btn .collect:hover .addfilm{
+.movies .detail .content .switch .btn .collect:hover .addfilm {
     display: block;
 }
 
-.movies .detail .content .switch .category{
+.movies .detail .content .switch .category {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
 }
 
-.movies .detail .content .switch .category .types{
+.movies .detail .content .switch .category .types {
     background-color: transparent;
     border: 1px solid var(--color-background-type);
     padding: 5px 12px;
     border-radius: 20px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: var(--color-background-type);
         color: var(--color-text-5);
     }
 }
 
-.movies .detail .content .switch .category .types:not(:last-child){
+.movies .detail .content .switch .category .types:not(:last-child) {
     margin-right: 15px;
 }
 
-.movies .detail .content .info-moview{
+.movies .detail .content .info-moview {
     margin-top: 60px;
 }
 
-.movies .detail .content .info-moview dt{
+.movies .detail .content .info-moview dt {
     float: left;
     clear: left;
     width: 120px;
@@ -200,20 +204,21 @@
     text-transform: uppercase;
 }
 
-.movies .detail .content .info-moview dd{
+.movies .detail .content .info-moview dd {
     font-size: 1.6rem;
     margin-bottom: 15px;
 }
 
-.movies .detail .content .info-moview dd a{
+.movies .detail .content .info-moview dd a {
     font-weight: bold;
     color: var(--color-text);
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
 
-.movies .detail .content .description{
+.movies .detail .content .description {
     margin-top: 30px;
     font-size: 1.6rem;
     color: var(--color-text-3);
@@ -221,21 +226,21 @@
     text-align: justify;
 }
 
-.movies .detail .content .actor{
+.movies .detail .content .actor {
     margin-top: 30px;
     width: 100%;
 }
 
-.movies .detail .content .actor .catalogue{
+.movies .detail .content .actor .catalogue {
     font-weight: bold;
     font-size: 1.4rem;
 }
 
-.movies .detail .content .actor .actor-items{
+.movies .detail .content .actor .actor-items {
     margin-top: 10px;
 }
 
-.movies .detail .content .actor .actor-items figure{
+.movies .detail .content .actor .actor-items figure {
     text-align: center;
     display: flex;
     align-items: center;
@@ -244,55 +249,60 @@
     cursor: default;
 }
 
-.movies .detail .content .actor .actor-items img{
+.movies .detail .content .actor .actor-items img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
     transition: ease .3s;
-    &:hover{
+
+    &:hover {
         opacity: .6;
     }
 }
 
 .movies .detail .content .actor .actor-items p,
-.movies .detail .content .actor .actor-items .character{
+.movies .detail .content .actor .actor-items .character {
     text-align: center;
 }
 
-.movies .detail .content .actor .actor-items p{
+.movies .detail .content .actor .actor-items p {
     color: var(--color-text);
     font-size: 1.5rem;
     font-weight: bold;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
 
-.movies .detail .content .actor .actor-items .character{
+.movies .detail .content .actor .actor-items .character {
     font-size: 1.4rem;
     margin-top: 5px;
     color: var(--color-text-3);
 }
 
-.movies .detail .content .trailer{
+.movies .detail .content .trailer {
     margin-top: 50px;
 }
 
-.movies .detail .content .trailer .catalogue{
+.movies .detail .content .trailer .catalogue {
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
-.movies .detail .content .trailer .trailer-items{
+.movies .detail .content .trailer .trailer-items {
     position: relative;
     padding: 0 10px;
-    &:hover{
-        &::after{
+    cursor: pointer;
+    transition: ease .2s;
+
+    &:hover {
+        &::after {
             content: '';
-            clip-path: polygon(24% 1%,102% 50%,24% 99%);
+            clip-path: polygon(24% 1%, 102% 50%, 24% 99%);
             width: 50px;
             height: 50px;
             background-color: var(--color-text);
@@ -306,29 +316,61 @@
     }
 }
 
-.movies .detail .content .trailer .trailer-items img{
+.movies .detail .content .trailer .trailer-items img {
     width: 100%;
-    &:hover{
+    border: 1px solid transparent;
+
+    &:hover {
         border: 1px solid orange;
     }
 }
 
-.movies .detail .content .similar-movies{
+.movies .detail .content .similar-movies {
     margin: 50px 0 60px 0;
 }
 
-.movies .detail .content .similar-movies .catalogue{
+.movies .detail .content .similar-movies .catalogue {
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
-.movies .detail .content .similar-movies .movie-items img{
+.movies .detail .content .similar-movies .movie-items img {
     width: 100%;
     padding: 0 10px;
 }
 
-.movies .detail .content .similar-movies .movie-items p{
+.movies .detail .content .similar-movies .movie-items p {
     margin: 10px 0 0 10px;
     color: var(--color-text);
+}
+
+.trailer-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: .8);
+    z-index: 101;
+    display: none;
+}
+
+.trailer-video .videos iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trailer-video .close{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: ease-in .2s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
