@@ -13,18 +13,13 @@
 }
 
 .movies .detail{
-    display: grid;
-    position: absolute;
-    width: 73%;
-    top: 45%;
-    grid-template-columns: 300px 1fr;
-    grid-template-areas:  
-    'poster detail'
-    'poster detail'
-    'poster detail'
-    'poster detail'
-    'poster detail';
-    column-gap: 50px;
+    display: flex;
+    position: relative;
+    margin-top: -330px;
+}
+
+.movies .detail >*:not(:first-child){
+    margin-left: 50px;
 }
 
 .movies .detail .poster img{
@@ -41,6 +36,7 @@
     background-color: var(--color-background-button-3);
     font-size: 1.8rem;
     border-radius: 5px;
+    color: var(--color-text);
     cursor: pointer;
     &:hover{
         background-color: #dd3952;
@@ -54,6 +50,10 @@
 .movies .detail .poster .btn-view .view{
     margin-left: 15px;
     align-self: last baseline;
+}
+
+.movies .detail .content{
+    width: 75% ;
 }
 
 .movies .detail .content .name-en{
@@ -184,4 +184,151 @@
 
 .movies .detail .content .switch .category .types:not(:last-child){
     margin-right: 15px;
+}
+
+.movies .detail .content .info-moview{
+    margin-top: 60px;
+}
+
+.movies .detail .content .info-moview dt{
+    float: left;
+    clear: left;
+    width: 120px;
+    font-size: 1.6rem;
+    color: var(--color-text-2);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.movies .detail .content .info-moview dd{
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.movies .detail .content .info-moview dd a{
+    font-weight: bold;
+    color: var(--color-text);
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.movies .detail .content .description{
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: var(--color-text-3);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.movies .detail .content .actor{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.movies .detail .content .actor .catalogue{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.movies .detail .content .actor .actor-items{
+    margin-top: 10px;
+}
+
+.movies .detail .content .actor .actor-items figure{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    cursor: default;
+}
+
+.movies .detail .content .actor .actor-items img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: ease .3s;
+    &:hover{
+        opacity: .6;
+    }
+}
+
+.movies .detail .content .actor .actor-items p,
+.movies .detail .content .actor .actor-items .character{
+    text-align: center;
+}
+
+.movies .detail .content .actor .actor-items p{
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.movies .detail .content .actor .actor-items .character{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    color: var(--color-text-3);
+}
+
+.movies .detail .content .trailer{
+    margin-top: 50px;
+}
+
+.movies .detail .content .trailer .catalogue{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.movies .detail .content .trailer .trailer-items{
+    position: relative;
+    padding: 0 10px;
+    &:hover{
+        &::after{
+            content: '';
+            clip-path: polygon(24% 1%,102% 50%,24% 99%);
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+    }
+}
+
+.movies .detail .content .trailer .trailer-items img{
+    width: 100%;
+    &:hover{
+        border: 1px solid orange;
+    }
+}
+
+.movies .detail .content .similar-movies{
+    margin: 50px 0 60px 0;
+}
+
+.movies .detail .content .similar-movies .catalogue{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.movies .detail .content .similar-movies .movie-items img{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.movies .detail .content .similar-movies .movie-items p{
+    margin: 10px 0 0 10px;
+    color: var(--color-text);
 }
