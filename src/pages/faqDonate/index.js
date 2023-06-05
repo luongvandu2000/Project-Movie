@@ -1,10 +1,4 @@
-import classNames from 'classnames/bind';
-import style from '~/components/layouts/faqs/faqs.module.scss';
-import base from '~/components/styles/baseStyle/base.module.scss';
-import Faqs from '~/components/layouts/faqs';
-
-const cx = classNames.bind(style);
-const cbase = classNames.bind(base);
+import Faqs from '~/components/layouts/faqsLayout';
 
 function FaqDonate() {
     return (
@@ -59,10 +53,10 @@ function FaqDonate() {
                                 {
                                     content: (
                                         <>
-                                            VD: Hướng dẫn yêu cầu nhập <b>VIP xyz</b>, bạn lại nhập <b>VIP xyz</b>. Trường hợp này
-                                            giao dịch của bạn sẽ được cộng tiền vào tài khoản người khác. Hãy liên hệ
-                                            với admin <a>ở đây</a>, nhớ gửi kèm ảnh chi tiết giao dịch (có đầy đủ các thông tin
-                                            về thời gian, nội dung chuyển tiền mà bạn đã nhập...)
+                                            VD: Hướng dẫn yêu cầu nhập <b>VIP xyz</b>, bạn lại nhập <b>VIP xyz</b>.
+                                            Trường hợp này giao dịch của bạn sẽ được cộng tiền vào tài khoản người khác.
+                                            Hãy liên hệ với admin <a>ở đây</a>, nhớ gửi kèm ảnh chi tiết giao dịch (có
+                                            đầy đủ các thông tin về thời gian, nội dung chuyển tiền mà bạn đã nhập...)
                                         </>
                                     ),
                                 },
@@ -74,7 +68,9 @@ function FaqDonate() {
                         ask: 'Bạn quên hoặc lỡ nhập sai nội dung chuyển tiền',
                         answer: {
                             contents: [
-                                <>Hãy <a>vào đây</a> để tìm và yêu cầu hệ thống xử lý lại giao dịch.</>
+                                <>
+                                    Hãy <a>vào đây</a> để tìm và yêu cầu hệ thống xử lý lại giao dịch.
+                                </>,
                             ],
                         },
                     },
@@ -83,7 +79,13 @@ function FaqDonate() {
                         ask: 'Các vấn đề phát sinh khác',
                         answer: {
                             contents: [
-                                <>Hãy liên hệ với admin <a>ở đây</a> hoặc inbox qua <a href='https://www.facebook.com/profile.php?id=100008170181401' target='_blank'>page FB</a>.</>
+                                <>
+                                    Hãy liên hệ với admin <a>ở đây</a> hoặc inbox qua{' '}
+                                    <a href="https://www.facebook.com/profile.php?id=100008170181401" target="_blank">
+                                        page FB
+                                    </a>
+                                    .
+                                </>,
                             ],
                         },
                     },

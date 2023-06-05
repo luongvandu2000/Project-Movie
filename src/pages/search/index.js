@@ -1,9 +1,9 @@
 import classNames from 'classnames/bind';
 import style from './search.module.scss';
 import base from '~/components/styles/baseStyle/base.module.scss';
-import Films from '~/components/layouts/films';
-import Header from '~/components/layouts/header';
-import Footer from '~/components/layouts/footer';
+import Films from '~/components/layouts/filmsLayout';
+import Header from '~/components/layouts/headerLayout';
+import Footer from '~/components/layouts/footerLayout';
 
 const cx = classNames.bind(style);
 const cbase = classNames.bind(base);

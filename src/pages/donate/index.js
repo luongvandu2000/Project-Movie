@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Header from '~/components/layouts/header';
-import Footer from '~/components/layouts/footer';
+import Header from '~/components/layouts/headerLayout';
+import Footer from '~/components/layouts/footerLayout';
 import style from './donate.module.scss';
 import base from '~/components/styles/baseStyle/base.module.scss';
 import classNames from 'classnames/bind';
@@ -46,8 +46,6 @@ function Donate() {
                 qrInfo.style.display = 'block';
             }
         };
-
-        console.log('re-render');
 
         info.addEventListener('click', handleInfo);
 

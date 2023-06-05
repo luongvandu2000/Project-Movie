@@ -1,0 +1,83 @@
+.persons .person-frame{
+    display: flex;
+    margin-top: 100px;
+}
+
+.persons h2{
+    font-size: 2.2rem;
+}
+
+.persons .person-frame >div:not(:first-child){
+    margin-left: 50px;
+}
+
+.persons .person-frame .short-info img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.persons .person-frame .short-info h2{
+    margin: 30px 0;
+}
+
+.persons .person-frame .short-info ul{
+    font-size: 1.6rem;
+}
+
+.persons .person-frame .short-info ul li{
+    margin: 25px 0;
+}
+
+.persons .person-frame .short-info ul li .field{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.persons .person-frame .short-info ul li .field-detail{
+    color: var(--color-text-3);
+}
+
+.persons .person-frame .info-detail{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.persons .person-frame .info-detail h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin: auto;
+}
+
+.persons .person-frame .info-detail .story p{
+    color: var(--color-text-3);
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.persons .person-frame .info-detail .inMovies,
+.persons .person-frame .info-detail .img-portrait{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.persons .person-frame .info-detail .inMovies .img-wrap,
+.persons .person-frame .info-detail .img-portrait .img-wrap{
+    width: 25%;
+    padding: 5px;
+}
+
+.persons .person-frame .info-detail .inMovies img,
+.persons .person-frame .info-detail .img-portrait img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.persons .person-frame .info-detail .inMovies h1{
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0;
+}

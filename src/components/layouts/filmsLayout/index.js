@@ -31,13 +31,13 @@ function Films({ title, listfilm, viewAll }) {
                     ''
                 )}
                 <div className={cx('frame')}>
-                    {listfilm.map((element) => {
+                    {listfilm.map((element, i) => {
                         return (
-                            <div className={cx('poster')}>
+                            <div key={i} className={cx('poster')}>
                                 <Link to={'/movies'}>
-                                    <image>
+                                    <div>
                                         <img src={images[`./${element.img}`]} />
-                                    </image>
+                                    </div>
                                 </Link>
                                 <h2>{element.name}</h2>
                                 <p>{element.desc}</p>

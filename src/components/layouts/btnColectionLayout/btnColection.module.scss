@@ -1,0 +1,111 @@
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn .node {
+    border-radius: 5px;
+    border: 1px solid var(--color-background-button-4);
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn .frame {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-background-button-4);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn .node span, .btn .frame span {
+    margin-left: 10px;
+}
+
+.btn .share {
+    background-color: var(--color-background-button-4);
+    margin-right: 10px;
+}
+
+.btn .share{
+    &:hover {
+        background-color: rgb(10, 10, 191);
+        border-color: rgb(10, 10, 191);
+    }
+}
+
+.btn .collect {
+    position: relative;
+
+    &:hover #collection {
+        background-color: var(--color-background-button-2);
+        border-color: var(--color-background-button-2);
+    }
+}
+
+
+.btn #view {
+    background-color: var(--color-background-type);
+    border-color: var(--color-background-type);
+    display: none;
+
+    &:hover {
+        background-color: var(--color-text);
+        border-color: var(--color-text);
+    }
+}
+
+.btn #wish,
+.btn #view {
+    color: var(--color-text-2);
+}
+
+.btn #wish {
+    background-color: var(--color-background-button);
+    border-color: var(--color-background-button);
+    display: none;
+
+    &:hover {
+        background-color: var(--color-background-button-5);
+        border-color: var(--color-background-button-5);
+    }
+}
+
+.btn .collect .add-collection {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: var(--color-background-type);
+    padding: 8px 0;
+    border-radius: 5px;
+    display: none;
+}
+
+.btn .collect .add-collection::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 50%;
+    height: 20px;
+}
+
+.btn .collect .add-collection .add {
+    width: 300px;
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    color: var(--color-text-5);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-text-1);
+    }
+}
+
+.btn .collect:hover .add-collection {
+    display: block;
+}

@@ -1,4 +1,4 @@
-import Faqs from '~/components/layouts/faqs';
+import Faqs from '~/components/layouts/faqsLayout';
 
 function Faq() {
     return (
@@ -73,7 +73,7 @@ function Faq() {
                                     content: (
                                         <>
                                             Nếu xem trên điện thoại: Lỗi âm thanh là do trình duyệt của bạn (thường là
-                                            Chrome). Hãy {' '}
+                                            Chrome). Hãy{' '}
                                             <a
                                                 href="https://play.google.com/store/apps/details?id=org.mozilla.firefox"
                                                 target="_blank"

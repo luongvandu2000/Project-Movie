@@ -1,5 +1,5 @@
-import Header from '~/components/layouts/header';
-import Footer from '~/components/layouts/footer';
+import Header from '~/components/layouts/headerLayout';
+import Footer from '~/components/layouts/footerLayout';
 import style from './account.module.scss';
 import base from '~/components/styles/baseStyle/base.module.scss';
 import classNames from 'classnames/bind';
@@ -133,15 +133,17 @@ function Account() {
                     <button>Kích hoạt VIP mode</button>
                     {/* -------------------------note------------------------- */}
                     <h2>Các phim đã kích hoạt VIP Mode</h2>
-                    <p className={cx('note')}>
+                    <div className={cx('note')}>
+                    <p>
                         Chú ý: chế độ VIP Mode có thời gian hiệu lực 10 ngày đối với phim. Tức là sau khi bạn kích hoạt
                         VIP Mode cho một phim nào đó, bạn có thể xem chế độ VIP với phim đó trong vòng 10 ngày.
                     </p>
-                    <p className={cx('note')}>
+                    <p>
                         Còn số dư trong tài khoản bạn thì không có thời hạn sử dụng. Bạn muốn dùng lúc nào cũng được.
                         Chẳng hạn tài khoản bạn còn 5000đ, thì 10 năm sau quay lại trang web bạn vẫn có thể dùng 5000đ
                         đó để kích hoạt VIP Mode cho phim.
                     </p>
+                    </div>
                 </div>
             </section>
             <Footer />

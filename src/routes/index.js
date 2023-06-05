@@ -8,8 +8,9 @@ import Account from '~/pages/account';
 import Donate from '~/pages/donate';
 import Faq from '~/pages/faq';
 import FaqDonate from '~/pages/faqDonate';
-import Movies from '~/components/layouts/movies';
-import moviesPage from '~/pages/moviesPage';
+import MoviesPage from '~/pages/moviesPage';
+import Person from '~/pages/person';
+import Watch from '~/pages/watchPage';
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -22,7 +23,9 @@ const publicRoutes = [
     { path: '/donate', component: Donate },
     { path: '/faq', component: Faq },
     { path: '/faqDonate', component: FaqDonate },
-    { path: '/movies', component: moviesPage },
-]
+    { path: '/movies', component: MoviesPage },
+    { path: '/person/:id', component: Person },
+    { path: '/watch', component: Watch },
+];
 
-export { publicRoutes }
+export { publicRoutes };
